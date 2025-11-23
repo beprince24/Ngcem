@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Kaamadhenu Arts and Science College</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Ensure full-page height */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Background with overlay */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('https://www.kascsathy.ac.in/images/facilities/green/02.jpg') no-repeat center center/cover;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        /* Content wrapper to push footer down */
+        .content-wrapper {
+            width: 100%;
+            height: 100%;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* About section */
+        .about-container {
+            max-width: 85%;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+        }
+
+        h2, h4 {
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .why-choose-us {
+            text-align: center;
+            font-weight: bold;
+            color: #d9534f;
+            margin-top: 20px;
+        }
+
+        /* Footer sticks to bottom */
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kaamadhenu Arts and Science College</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.php">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button" data-bs-toggle="dropdown">
+                            LOGIN
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./ad_login.php">ADMIN</a></li>
+                            <li><a class="dropdown-item" href="./faculty_login.php">FACULTY</a></li>
+                            <li><a class="dropdown-item" href="./student_login.php">STUDENT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./student_reg.php">REGISTER</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html">About US</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <div class="about-container">
+            <h2>About Us</h2>
+            <p>
+                Kaamadhenu Arts and Science College is an institution of repute located on the outskirts of Sathyamangalam in the Erode – Sathyamangalam stretch. Blessed with a salubrious weather and nestled in the luxuriance of greenness, the institution acts as a hive to all the knowledge seekers from different parts of the nation.
+            </p>
+            <p>
+                Two decades have passed since laying the foundation stone by the illustrious chairman of Bannariamman Institute of Technology, Shri. S.V. Balasubramaniam Avl. It was an initiation that fructified into buildings in a year and was declared open to the world by Thavathiru. Santhalinga Ramasamy Adigalar on 5th July 2001.
+            </p>
+            <p>
+                The extensive 25-acre location is painted green with majestic trees and luscious shrubs. The rustling leaves resonate with the sweet music of the mountainous breeze, infusing the much-needed energy into young minds. The well-equipped laboratories, bright ventilated classrooms, rich libraries, and expansive playground create a fertile atmosphere that ignites the spark of learning in young minds.
+            </p>
+            
+            <h4 class="why-choose-us">Why Choose Us?</h4>
+            <p>Managing college events can be chaotic, but with our platform, you get a seamless and digital way to:</p>
+            <ul>
+                <li><strong>📅 Easy Event Management:</strong> Organize quizzes, paper presentations, workshops, and cultural events.</li>
+                <li><strong>📢 Stay Updated:</strong> Receive real-time notifications about upcoming events.</li>
+                <li><strong>📝 Online Registration:</strong> Students can register and track their participation hassle-free.</li>
+                <li><strong>🏆 Leaderboards & Results:</strong> View competition results and rankings instantly.</li>
+                <li><strong>📊 Faculty Moderation:</strong> Faculty members can approve and oversee events with ease.</li>
+            </ul>
+            <p>Join us today and experience a new way to manage and participate in college events!
+            </p>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Kaamadhenu Arts and Science College. All Rights Reserved.</p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
